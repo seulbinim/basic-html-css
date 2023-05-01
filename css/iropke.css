@@ -1,0 +1,14 @@
+@font-face {
+  font-family: IropkeBatangM;
+  src: local(IropkeBatangM),
+    url(font/IropkeBatangM.eot?#iefix) format("embedded-opentype"),
+    url(font/IropkeBatangM.woff) format("woff");
+  font-style: normal;
+  font-weight: normal;
+  /*
+    사용할 유니코드의 범위를 정함.
+    유니코드 범위 내 사용하는 문자가 없으면
+    웹폰트를 다운로드 안함.
+   */
+  unicode-range: U+0-10FFFF;
+}

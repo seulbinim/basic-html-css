@@ -1,0 +1,14 @@
+body {
+  font-family: "SUIT";
+  font-weight: 300;
+}
+
+ul {
+  border: 1px solid #aaa;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-image: url("../images/sun.png"), url("../images/cloud.png"),
+    url("../images/tree.png");
+  background-size: 100px 100px, 450px 150px, 350px 600px;
+  background-position: 250px 0, 200px 0, 0 0;
+}
