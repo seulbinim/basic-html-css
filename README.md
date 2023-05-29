@@ -21,6 +21,5 @@ git remote -v
 upstream의 teacher 브랜치의 업데이트 된 내용을 가져오기
 
 ```sh
-git remote update
 git pull upstream teacher
 ```
