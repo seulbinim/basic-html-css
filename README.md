@@ -7,7 +7,7 @@
 학습 저장소 복제하기
 
 ```sh
-git clone https://github.com/seulbinim/BasicLecture.git
+git clone https://github.com/seulbinim/basic-html-css.git
 ```
 
 리모트 저장소 업데이트 하기
