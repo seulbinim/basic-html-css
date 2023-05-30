@@ -1,23 +1,71 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
   <head>
     <!-- HTML5 charset 설정 방식 -->
     <meta charset="UTF-8" />
-    <meta name="author" content="이듬(EUID) - 슬비쌤" />
-    <meta name="keywords" content="웹표준,웹접근성,HTML5" />
-    <meta name="description" content="멋쟁이 사자처럼과 이듬이 함께하는 프론트엔드 개발 스쿨" />
+
+    <!-- 반응형 디자인을 위한 viewport meta tag 선언 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+
+    <!-- SEO를 위한 제작자, 키워드, 설명 등 정보를 명시 -->
+    <meta name="author"
+          content="이듬(EUID) - 슬비쌤" />
+    <meta name="keywords"
+          content="웹표준,웹접근성,HTML5" />
+    <meta name="description"
+          content="멋쟁이 사자처럼과 이듬이 함께하는 프론트엔드 개발 스쿨" />
+
+    <!-- 3초 후 새로고침을 시도 -->
     <!-- <meta http-equiv="refresh" content="3"/> -->
 
-    <meta property="og:title" content="콘텐츠 제목" /> 
-    <meta property="og:url" content="웹페이지 URL" />
-    <meta property="og:type" content="웹페이지 타입(blog, website 등)" />
-    <meta property="og:image" content="표시되는 이미지" /> 
-    <meta property="og:title" content="웹사이트 이름" /> 
-    <meta property="og:description" content="웹페이지 설명" />
+    <!-- OG 정보 선언 -->
+    <meta property="og:title"
+          content="콘텐츠 제목" />
+    <meta property="og:url"
+          content="웹페이지 URL" />
+    <meta property="og:type"
+          content="웹페이지 타입(blog, website 등)" />
+    <meta property="og:image"
+          content="표시되는 이미지" />
+    <meta property="og:title"
+          content="웹사이트 이름" />
+    <meta property="og:description"
+          content="웹페이지 설명" />
+
+    <!-- 기준 URL 설정 및 파비콘 선언 -->
+    <base target="_blank"
+          href="./favicon/" />
+    <link rel="icon"
+          type="image/x-icon"
+          href="favicon.ico" />
+    <link rel="icon"
+          type="image/png"
+          href="favicon.png" />
+
+    <!-- 문서 제목 -->
+    <title>메타 데이터</title>
+
+    <!-- 스타일(Embedded Style) -->
+    <style>
+      body {
+        background: #000;
+        color: #fff;
+      }
+    </style>
   </head>
+
   <body>
-    
+    <h1>메타데이터</h1>
+    <p>메타데이터 관련 요소는 &lt;head&gt; 내에서 사용할 수 있습니다.</p>
+    <p>문자 인코딩 지정은 HTML5 방식과 기존 방식 모두 허용됩니다.</p>
+    <p>&lt;title&gt; 요소는 문서의 제목을 나타내며 텍스트만 허용합니다.</p>
+    <p>뷰포트 메타 태그는 웹브라우저가 페이지를 렌더링할 때 동작하는 방법을 정의합니다.</p>
+    <p>메타태그의 http-equiv 속성에 refresh 값을 사용하여 특정 시간이 지나면 새로고침 하거나 웹페이지로 이동할 수 있습니다.</p>
+    <p>&lt;base&gt; 요소를 사용하여 기준 URL을 지정할 수 있습니다.</p>
+    <p>외부리소스(파비콘, 스타일시트 등)를 연결할 때 &lt;base&gt; 요소를 사용할 수 있습니다.</p>
+    <p>HTML 문서에 스타일을 적용할 때 스타일시트를 &lt;link&gt; 요소로 제공할 수도 있지만 &lt;style&gt; 요소를 사용하여 HTML 문서내에 CSS를 포함할 수도 있습니다.</p>
   </body>
+
 </html>
-
-
