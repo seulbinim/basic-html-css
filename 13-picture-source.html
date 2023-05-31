@@ -1,1 +1,25 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>픽쳐와 소스 요소</title>
+</head>
+
+<body>
+
+  <picture>
+    <source media="(min-width: 650px)"
+      srcset="https://googlechrome.github.io/samples/picture-element/images/kitten-large.png">
+    <source media="(min-width: 465px)"
+      srcset="https://googlechrome.github.io/samples/picture-element/images/kitten-medium.png">
+    <!-- img tag for browsers that do not support picture element -->
+    <img
+      src="https://googlechrome.github.io/samples/picture-element/images/kitten-small.png"
+      alt="a cute kitten">
+  </picture>
+</body>
+
+</html>
