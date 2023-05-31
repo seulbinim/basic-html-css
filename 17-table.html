@@ -1,1 +1,78 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>테이블 관련 요소</title>
+</head>
+
+<body>
+  <h1>과목별 테스트 결과</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>과목명</th>
+        <th scope="col">HTML/CSS</th>
+        <th scope="col">Javascript</th>
+        <th scope="col">React</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th scope="row">금윤호</th>
+        <td>100</td>
+        <td>95</td>
+        <td>98</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <th scope="row">범쌤</th>
+        <td>97</td>
+        <td>100</td>
+        <td>99</td>
+      </tr>
+      <tr>
+        <th scope="row">홍길동</th>
+        <td>80</td>
+        <td>75</td>
+        <td>63</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p id="tableDesc">
+    프론트엔드 관련 기술 시험 결과를 나타낸 표 입니다.
+  </p>
+
+  <table border="1" summary="표의 요약 정보" aria-describedby="tableDesc">
+    <tr>
+      <th>과목명</th>
+      <th id="html">HTML/CSS</th>
+      <th id="js">Javascript</th>
+      <th id="react">React</th>
+    </tr>
+    <tr>
+      <th id="ma01">김미리</th>
+      <td headers="html ma01">100</td>
+      <td headers="js ma01">95</td>
+      <td headers="react ma01">98</td>
+    </tr>
+    <tr>
+      <th id="ma02">임시연</th>
+      <td>97</td>
+      <td>100</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <th id="ma03">김태진</th>
+      <td>80</td>
+      <td>75</td>
+      <td>63</td>
+    </tr>
+  </table>
+</body>
+
+</html>
