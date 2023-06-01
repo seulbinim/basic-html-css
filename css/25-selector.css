@@ -1,1 +1,5 @@
 /* CSS 선택자(Selector) */
+body {
+  font-family: "SUIT";
+  font-weight: 300;
+}
