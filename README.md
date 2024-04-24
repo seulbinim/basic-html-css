@@ -26,16 +26,16 @@ git branch -a
 리모트 저장소 브랜치 가져오기
 
 ```sh
-git checkout -t <리모트 저장소 이름>
-git checkout -t origin/training
-git checkout -t origin/complete
-git checkout -t origin/teacher
+git switch -t <리모트 저장소 이름>
+git switch -t origin/ssam
+git switch -t origin/student
+git switch -t origin/finish
 ```
 
 브랜치 이동하기
 
 ```sh
-git switch training
-git switch complete
-git switch main
+git switch ssam
+git switch student
+git switch finish
 ```
