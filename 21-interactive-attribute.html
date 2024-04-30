@@ -1,1 +1,38 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>유저 인터렉션 속성</title>
+  <link rel="stylesheet" href="./style/peak-time.css" />
+  <script type="module" src="./js/peak-time.js"></script>
+</head>
+<body>
+  <div class="voting-result-wrapper">
+    <!-- accesskey로 실행할 때 MacOs는 Ctrl+Opt+<Key>, Windows는 Alt+<Key> (크롬 기준) -->
+    <!-- 크롬 이외 웹브라우저는 MDN accesskey 안내 참고 -->
+    <button type="button" class="voting-result-button" accesskey="P">피크타임 Top6 결과 보기</button>
+    <div class="voting-result" hidden>
+      <ol data-sort="none">
+        <li>팀 11시 - VANNER</li>
+        <li>팀 7시 - MASC</li>
+        <li>팀 8시 - 다크비</li>
+        <li>팀 24시 - B.A.P, 탑독, 비아이지, ARGON</li>
+        <li>팀 13시 - BAE173</li>
+        <li>팀 20시 - 몬트</li>
+      </ol>
+    </div>
+    <div tabindex="0" class="voting-result" hidden>
+      <ul class="voting-result-vedio">
+        <li><a href="https://vod.jtbc.co.kr/player/embed/VO10679813">피크타임 1,2위 영상</a></li>
+        <li><a href="https://vod.jtbc.co.kr/player/embed/VO10679810" tabindex="-1">피크타임 3,4위 영상</a></li>
+        <li><a href="https://vod.jtbc.co.kr/player/embed/VO10679807">피크타임 5,6위 영상</a></li>
+      </ul>
+    </div>
+  </div>
+  <figure>
+    <img src="./images/peaktime.jpeg" alt="피크타임 매주 수요일 밤 10시 30분 방송" />
+    <figcaption class="user-caption" contenteditable>PEAK TIME</figcaption>
+  </figure>
+</body>
+</html>
