@@ -1,1 +1,49 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>인터렉티브 요소</title>
+  <style>
+    dialog::backdrop {
+      background: rgb(255 0 0 / 25%);
+    }
+  </style>
+  <script type="module">
+    const showButton =  document.querySelector('.show-button');
+    const penalDialog = document.querySelector('dialog');
+    const closeButton = document.querySelector('.close-button');
+
+    showButton.addEventListener('click', () =>{
+      penalDialog.showModal();
+    });
+
+    closeButton.addEventListener('click', () =>{
+      penalDialog.close();
+    });
+  </script>
+</head>
+<body>
+  <!-- 다이얼로그 예시 -->
+  <dialog aria-labelledby="join-info">
+    <p id="join-info">차별화된 회원가입 혜택</p>
+    <a href="/">지금 바로 만나보세요!</a>
+    <form method="dialog">
+      <button type="button">오늘 하루 안 보기</button>
+      <button type="button" class="close-button">닫기</button>
+    </form>
+  </dialog>
+  <button type="button" class="show-button">다이얼로그 보기</button>
+  <br />
+  <!-- 상세 및 요약 정보 제공 예시 -->
+  <div>
+    <details open>
+      <summary>국민 내일배움카드</summary>
+      <figure>
+        <img src="images/learn-card.png" alt="" />
+      </figure>
+      <p>급격한 기술 발전 및 노동시장 변화에 대응하는 사회안전망 차원에서 국민 스스로 직업능력개발훈련을 실시할 수 있도록 훈련비 등을 지원받을 수 있는 카드를 의미한다.</p>
+    </details>
+  </div>
+</body>
+</html>
