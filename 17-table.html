@@ -1,1 +1,61 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블 관련 요소</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>&nbsp;</th>
+        <th id="ko">국어</th>
+        <th id="en">영어</th>
+        <th id="math">수학</th>
+      </tr>
+      <tr>
+        <th id="student1">홍길동</th>
+        <td headers="student1 ko">80</td>
+        <td headers="student1 en">70</td>
+        <td headders="student1 math">90</td>
+      </tr>
+      <tr>
+        <th id="student2">김철수</th>
+        <td headers="student2 ko">90</td>
+        <td headers="student2 en">100</td>
+        <td headers="student2 math">50</td>
+      </tr>
+      <tr>
+        <th id="student3">최영희</th>
+        <td headers="student3 ko">100</td>
+        <td headers="student3 en">80</td>
+        <td headers="student3 math">70</td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th scope="row">국어</th>
+          <td>80</td>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th scope="row">1학기</th>
+          <td>테이블의 바닥글</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <th scope="row">제목셀</th>
+          <td>내용셀</td>
+        </tr>
+        <tr>
+          <th scope="row">제목셀</th>
+          <td>내용셀</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
