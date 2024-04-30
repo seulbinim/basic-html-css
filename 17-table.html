@@ -6,7 +6,41 @@
     <title>테이블 관련 요소</title>
   </head>
   <body>
+    <!-- scope 속성을 사용한 경우 -->
     <table>
+      <caption>
+        중간고사 성적
+      </caption>
+      <tr>
+        <th>&nbsp;</th>
+        <th scope="col">국어</th>
+        <th scope="col">영어</th>
+        <th scope="col">수학</th>
+      </tr>
+      <tr>
+        <th scope="row">홍길동</th>
+        <td>80</td>
+        <td>70</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <th scope="row">김철수</th>
+        <td>90</td>
+        <td>100</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <th scope="row">최영희</th>
+        <td>100</td>
+        <td>80</td>
+        <td>70</td>
+      </tr>
+    </table>
+    <!-- id, headers를 사용한 경우 -->
+    <table>
+      <caption>
+        중간고사 성적
+      </caption>
       <tr>
         <th>&nbsp;</th>
         <th id="ko">국어</th>
@@ -33,29 +67,40 @@
       </tr>
     </table>
     <br />
-    <table>
-      <thead>
-        <tr>
-          <th scope="row">국어</th>
-          <td>80</td>
-        </tr>
-      </thead>
-      <tfoot>
-        <tr>
-          <th scope="row">1학기</th>
-          <td>테이블의 바닥글</td>
-        </tr>
-      </tfoot>
-      <tbody>
-        <tr>
-          <th scope="row">제목셀</th>
-          <td>내용셀</td>
-        </tr>
-        <tr>
-          <th scope="row">제목셀</th>
-          <td>내용셀</td>
-        </tr>
-      </tbody>
-    </table>
+    <!-- <div> 요소로 구현한 테이블에 WAI-ARIA를 사용한 경우 -->
+    <div role="table" aria-label="중간고사 성적">
+      <div role="rowgroup">
+        <div role="row">
+          <span role="columnheader" aria-sort="none">&nbsp;</span>
+          <span role="columnheader" aria-sort="none">국어</span>
+          <span role="columnheader" aria-sort="none">영어</span>
+          <span role="columnheader" aria-sort="none">수학</span>
+        </div>
+      </div>
+      <div role="rowgroup">
+        <div role="row" aria-rowindex="1">
+          <span role="rowheader">홍길동</span>
+          <span role="cell">80</span>
+          <span role="cell">70</span>
+          <span role="cell">90</span>
+        </div>
+      </div>
+      <div role="rowgroup">
+        <div role="row" aria-rowindex="1">
+          <span role="rowheader">김철수</span>
+          <span role="cell">90</span>
+          <span role="cell">100</span>
+          <span role="cell">50</span>
+        </div>
+      </div>
+      <div role="rowgroup">
+        <div role="row" aria-rowindex="1">
+          <span role="rowheader">최영희</span>
+          <span role="cell">100</span>
+          <span role="cell">80</span>
+          <span role="cell">70</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
