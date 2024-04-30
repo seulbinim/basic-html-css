@@ -1,1 +1,18 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>비디오 관련 요소</title>
+</head>
+<body>
+  <video class="fullsize" poster="video/poster.jpg" controls autoplay> 
+    <source src="video/google-developer-stories.mp4" type="video/mp4" />
+    <source src="video/google-developer-stories.mov" type="video/mov" />
+    <source src="video/google-developer-stories.ogg" type="video/ogg" />
+    <source src="video/google-developer-stories.webm" type="video/webm" />
+    <track src="video/google-developer-stories-subtitles-en.vtt" 
+           kind="captions" srclang="en" label="English Caption" />
+  </video>   
+</body>
+</html>
